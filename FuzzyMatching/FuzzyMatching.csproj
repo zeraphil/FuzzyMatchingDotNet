@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Configurations>Debug;Release</Configurations>
+    <Product>Fuzzy Matching Library for DotNet</Product>
+    <Authors>David Schwarz</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Class libary containing a set of useful fuzzy matching algorithms implemented in C#.</Description>
+    <AssemblyName>FuzzyMatching</AssemblyName>
+    <Version>1.0.0.0</Version>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>fuzzymatching.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <Copyright>Copyright © David Schwarz 2022</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+
+</Project>
